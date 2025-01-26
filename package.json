@@ -15,26 +15,22 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist/**"
-  ],
+  "files": ["dist/**"],
   "scripts": {
     "build": "tsup",
     "dev": "vitest",
-    "format": "prettier . --write --cache",
+    "format": "pnpm format:write",
+    "format:check": "pnpm ultracite lint",
+    "format:write": "pnpm ultracite format",
     "test": "vitest run"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@envoy1084/style-guide": "^0.1.0",
-    "@eslint/js": "^9.14.0",
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
-    "@types/node": "^18",
-    "@typescript-eslint/parser": "^8.11.0",
-    "eslint": "^9.13.0",
-    "prettier": "^3.3.3",
+    "@types/node": "^22",
     "tsup": "^8.3.5",
-    "typescript": "5.6.3",
-    "typescript-eslint": "^8.11.0",
-    "vitest": "^2.1.4"
+    "typescript": "^5.7.3",
+    "ultracite": "4.1.17",
+    "vitest": "^3.0.4"
   }
 }

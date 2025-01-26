@@ -12,8 +12,7 @@
     "noEmit": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-
-    /* Path Aliases */
+    "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
