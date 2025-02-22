@@ -19,18 +19,16 @@
   "scripts": {
     "build": "tsup",
     "dev": "vitest",
-    "format": "pnpm format:write",
-    "format:check": "pnpm ultracite lint",
-    "format:write": "pnpm ultracite format",
-    "test": "vitest run"
+    "test": "vitest run",
+    "format": "pnpm biome format",
+    "format:write": "pnpm biome format --write"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@envoy1084/style-guide": "^0.1.0",
     "@types/node": "^22",
+    "klarity": "^0.0.2",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
-    "ultracite": "4.1.17",
     "vitest": "^3.0.4"
   }
 }
