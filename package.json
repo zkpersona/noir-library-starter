@@ -34,7 +34,10 @@
     "dev": "vitest",
     "test": "vitest run",
     "format": "pnpm biome format",
-    "format:write": "pnpm biome format --write"
+    "format:write": "pnpm biome format --write",
+    "release": "pnpm run build && changeset publish",
+    "version-packages": "changeset version",
+    "changeset": "changeset"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
