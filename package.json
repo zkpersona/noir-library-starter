@@ -1,24 +1,33 @@
 {
   "name": "@zkpersona/noir-library-starter",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Template for building Noir libraries.",
-  "keywords": [],
+  "keywords": [
+    "noir",
+    "noir-lang",
+    "noir-library",
+    "zkp",
+    "zero-knowledge-proofs",
+    "zk",
+    "aztec",
+    "ethereum",
+    "cryptography",
+    "privacy"
+  ],
   "license": "MIT",
   "author": {
     "name": "Vedant Chainani",
-    "email": "vedant@zkpersona.com",
+    "email": "vedant@zkpersona.xyz",
     "url": "https://zkpersona.xyz"
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
     }
   },
-  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "files": ["dist/**", "lib/**"],
   "scripts": {
     "build": "tsup",
@@ -33,6 +42,12 @@
     "klarity": "^0.0.3",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
-    "vitest": "^3.0.4"
+    "vitest": "^3.0.4",
+    "@noir-lang/noir_codegen": "^1.0.0-beta.3",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "@zkpersona/noir-helpers": "^0.1.0",
+    "@noir-lang/noir_js": "^1.0.0-beta.3"
   }
 }
