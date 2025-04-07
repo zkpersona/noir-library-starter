@@ -2,8 +2,8 @@ name: Benchmarks
 
 on:
   push:
-   branches:
-    - main
+    branches:
+      - main
   pull_request:
 
 jobs:
@@ -21,8 +21,11 @@ jobs:
 
       - name: Install bb
         run: |
-          npm install -g bbup
+          # Install BBup using the provided curl script.
+          curl -L https://raw.githubusercontent.com/AztecProtocol/aztec-packages/refs/heads/master/barretenberg/bbup/install | bash
+          # Install the Barretenberg version compatible with the specified Noir version.
           bbup -nv 1.0.0-beta.2
+
       - name: Build Noir benchmark programs
         run: nargo export
 
