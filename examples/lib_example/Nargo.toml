@@ -1,5 +1,5 @@
 [package]
-name = "lib_test"
+name = "lib_example"
 type = "bin"
 authors = [""]
 
