@@ -1,10 +1,14 @@
 {
-  "name": "@repo/package-template",
+  "name": "@zkpersona/noir-library-starter",
   "version": "0.0.1",
-  "description": "",
+  "description": "Template for building Noir libraries.",
   "keywords": [],
-  "license": "ISC",
-  "author": "",
+  "license": "MIT",
+  "author": {
+    "name": "Vedant Chainani",
+    "email": "vedant@zkpersona.com",
+    "url": "https://zkpersona.xyz"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -15,7 +19,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist/**"],
+  "files": ["dist/**", "lib/**"],
   "scripts": {
     "build": "tsup",
     "dev": "vitest",
@@ -26,7 +30,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22",
-    "klarity": "^0.0.2",
+    "klarity": "^0.0.3",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
     "vitest": "^3.0.4"
