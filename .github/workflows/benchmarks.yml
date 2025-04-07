@@ -23,6 +23,8 @@ jobs:
         run: |
           # Install BBup using the provided curl script.
           curl -L https://raw.githubusercontent.com/AztecProtocol/aztec-packages/refs/heads/master/barretenberg/bbup/install | bash
+          # resart shell
+          source ~/.bashrc
           # Install the Barretenberg version compatible with the specified Noir version.
           bbup -nv 1.0.0-beta.2
 
