@@ -30,4 +30,4 @@ for artifact in $artifacts; do
     ITER=$(( $ITER + 1 ))
 done
 
-echo "]}" >> gates_report.json 
+echo "]}" >> gates_report.json
