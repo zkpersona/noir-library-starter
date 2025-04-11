@@ -34,10 +34,12 @@
     "dev": "vitest",
     "test": "vitest run",
     "format": "pnpm biome format",
+    "prepare": "lefthook install",
     "format:write": "pnpm biome format --write",
     "release": "pnpm run build && changeset publish",
     "version-packages": "changeset version",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "commitlint": "commitlint --edit"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
